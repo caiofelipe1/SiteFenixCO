@@ -52,10 +52,10 @@ nav ul li a {
 }
 
 .hero {
-    background-color: #ff8502;
-    color: #ffffff;
+    color: #000000;
     padding: 100px 20px;
     text-align: center;
+    font-size: 36px;
 }
 
 .hero .btn {
@@ -116,3 +116,14 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.hero {
+    font-family: 'Montserrat', sans-serif; 
+
+}
+.highlight {
+    font-family: 'Kanit', sans-serif; 
+}
+
+
+
