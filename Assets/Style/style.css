@@ -1,3 +1,7 @@
+@media only screen and (min-width: 780px) and (max-width: 1279px){
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,6 +17,10 @@ header {
     color: #ffffff;
     padding: 10px 20px;
     text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav {
@@ -21,6 +29,13 @@ nav {
     align-items: center;    
     max-width: 1700px;
     margin: 0 auto;
+    
+}
+
+.nav__titulo .brasao,
+.nav__titulo .titulo {
+    display: inline-block;
+    vertical-align: middle; /* Alinha verticalmente os elementos no centro */
 }
 
 .brasao {
@@ -29,13 +44,16 @@ nav {
     align-items: center;
     padding: 0 10px;
     margin-top: 0;
+    margin-right: -2%;
 }
 
 nav .titulo {
     font-size: 1.5em;
     font-weight: bold; 
-    margin-right: 1100px; 
+      
 }
+
+
 
 nav ul {
     list-style: none;
