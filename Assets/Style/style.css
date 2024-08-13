@@ -1,15 +1,17 @@
-@media only screen and (min-width: 780px) and (max-width: 1279px){
-
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-top: 60px; 
 }
 
 header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,50 +19,45 @@ header {
     color: #ffffff;
     padding: 10px 20px;
     text-align: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
     max-width: 1700px;
     margin: 0 auto;
-    
+    width: 100%;
 }
 
-.nav__titulo .brasao,
-.nav__titulo .titulo {
-    display: inline-block;
-    vertical-align: middle; /* Alinha verticalmente os elementos no centro */
+.nav__titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-left: -4%;
 }
 
-.brasao {
+.nav__logo {
     max-width: 50px;
     display: flex;
     align-items: center;
     padding: 0 10px;
     margin-top: 0;
-    margin-right: -2%;
 }
 
-nav .titulo {
+.titulo {
     font-size: 1.5em;
-    font-weight: bold; 
-      
+    font-weight: bold;
 }
-
-
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin-left: auto;
 }
 
 nav ul li a {
@@ -69,11 +66,18 @@ nav ul li a {
     padding: 5px 10px;
 }
 
+.instagram-icon i {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
 .hero {
     color: #000000;
     padding: 100px 20px;
     text-align: center;
     font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero .btn {
@@ -135,13 +139,59 @@ footer {
     padding: 20px 0;
 }
 
-.hero {
-    font-family: 'Montserrat', sans-serif; 
-
+.highlight-box {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 100px;
+    display: inline-block;
+    margin-top: 20px;
 }
-.highlight {
-    font-family: 'Kanit', sans-serif; 
+
+.highlight-text {
+    text-align: center;
+    font-size: 40px;
 }
 
+.highlight-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
 
+.highlight-subtitle {
+    font-size: 1.2em;
+    margin: 0;
+}
 
+.imgs-content {
+    padding: 15px;
+    margin-left: 15px;
+}
+
+.info-boxes {
+    position: fixed; 
+    top: 90px; 
+    left: 20px; 
+    z-index: 1000; 
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    margin-left: 73%;
+}
+
+.info-box {
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 0px 15px; 
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+    max-width: 265px; 
+    line-height: 1.2; 
+    white-space: nowrap;
+}
+.info-box i {
+    font-size: 1.2em;
+}
