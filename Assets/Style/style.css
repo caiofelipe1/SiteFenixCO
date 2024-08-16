@@ -145,6 +145,7 @@ footer {
     padding: 100px;
     display: inline-block;
     margin-top: 20px;
+    position: relative;
 }
 
 .highlight-text {
@@ -159,8 +160,35 @@ footer {
 }
 
 .highlight-subtitle {
-    font-size: 1.2em;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 1em;
     margin: 0;
+}
+
+.highlight-line {
+    position: absolute;
+    height: 4px;
+    background-color: #000000;
+}
+
+.highlight-line-top {
+    top: 0;
+    left: 0; 
+    width: 1500px; 
+}
+
+.highlight-line-bottom {
+    bottom: 0;
+    left: 0; 
+    width: 1500px; 
+}
+
+.highlight-line-right {
+    right: -943px; 
+    top: 0; 
+    width: 4px; 
+    height: 100%; 
+    background-color: #000000; 
 }
 
 .imgs-content {
@@ -192,6 +220,4 @@ footer {
     line-height: 1.2; 
     white-space: nowrap;
 }
-.info-box i {
-    font-size: 1.2em;
-}
+
