@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -139,35 +141,43 @@ footer {
     padding: 20px 0;
 }
 
-.highlight-box {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 100px;
-    display: inline-block;
-    margin-top: 20px;
-    position: relative;
-}
-
-.highlight-text {
-    text-align: center;
-    font-size: 40px;
-}
-
 .highlight-title {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     margin: 0;
+    color: white;
+    font-size: 5em;
+    font-family: 'Kumbh Sans', sans-serif;
 }
-
 .highlight-subtitle {
     font-family: 'Lexend Zetta', sans-serif;
     font-size: 1em;
     margin: 0;
+    color: white;
+    font-size: 2em;
 }
 
-.imgs-content {
+.grid-empresa {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    margin-left: 250px;
+    height: 300px;
+    text-align: center;
+    gap: 10px;
+}
+
+
+#logo-empresa {
+    justify-content: center;
+    align-content: center;
+    border-radius: 16px;
+    background-color: #000000;
+}
+
+.produtos {
     padding: 15px;
     margin-left: 15px;
+    margin-top: 200px;
 }
 
 .info-boxes {
@@ -181,7 +191,7 @@ footer {
     margin-left: 73%;
 }
 
-.info-box {
+.info-box{
     background-color: #000000; 
     color: #ffffff; 
     padding: 0px 15px; 
@@ -193,5 +203,10 @@ footer {
     max-width: 265px; 
     line-height: 1.2; 
     white-space: nowrap;
+    transition: background 0.3s;
 }
 
+.hover-botao:hover {
+    background-color: rgba(34, 34, 34, 0.685);
+    cursor: pointer;
+}
