@@ -157,14 +157,14 @@ footer {
     font-size: 2em;
 }
 
-.grid-empresa {
-    display: grid;
-    grid-template-columns: 3fr 6fr 3fr;
-    margin-left: 250px;
-    height: 300px;
-    text-align: center;
-    gap: 10px;
-}
+    .grid-empresa {
+        display: grid;
+        grid-template-columns: 3fr 6fr 3fr;
+        margin-left: 250px;
+        height: 300px;
+        text-align: center;
+        gap: 10px;
+    }
 
 
 #logo-empresa {
