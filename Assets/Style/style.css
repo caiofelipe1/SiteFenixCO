@@ -5,14 +5,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-top: 60px; 
+    margin-top: 60px;
 }
 
 header {
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -24,19 +24,30 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-nav {
+.tituloElogo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1700px;
+    max-width: 270px;
     margin: 0 auto;
     width: 100%;
+    margin-left: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    margin-right: 150px;
 }
 
 .nav__titulo {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     margin-left: -4%;
 }
 
@@ -65,8 +76,9 @@ nav ul {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 13px;
 }
+
 
 .instagram-icon i {
     font-size: 1.3em;
@@ -91,7 +103,9 @@ nav ul li a {
     margin-top: 20px;
 }
 
-.services, .about, .contact {
+.services,
+.about,
+.contact {
     padding: 50px 20px;
     text-align: center;
 }
@@ -120,7 +134,8 @@ nav ul li a {
     gap: 10px;
 }
 
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
     padding: 10px;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -149,6 +164,7 @@ footer {
     font-size: 5em;
     font-family: 'Kumbh Sans', sans-serif;
 }
+
 .highlight-subtitle {
     font-family: 'Lexend Zetta', sans-serif;
     font-size: 1em;
@@ -157,14 +173,14 @@ footer {
     font-size: 2em;
 }
 
-    .grid-empresa {
-        display: grid;
-        grid-template-columns: 3fr 6fr 3fr;
-        margin-left: 250px;
-        height: 300px;
-        text-align: center;
-        gap: 10px;
-    }
+.grid-empresa {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    margin-left: 250px;
+    height: 300px;
+    text-align: center;
+    gap: 10px;
+}
 
 
 #logo-empresa {
@@ -181,27 +197,27 @@ footer {
 }
 
 .info-boxes {
-    position: fixed; 
-    top: 90px; 
-    left: 20px; 
-    z-index: 1000; 
+    position: fixed;
+    top: 90px;
+    left: -100px;
+    z-index: 1000;
     display: flex;
     gap: 15px;
     flex-wrap: nowrap;
     margin-left: 73%;
 }
 
-.info-box{
-    background-color: #000000; 
-    color: #ffffff; 
-    padding: 0px 15px; 
+.info-box {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0px 15px;
     border-radius: 40px;
     display: flex;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     gap: 10px;
-    max-width: 265px; 
-    line-height: 1.2; 
+    max-width: 265px;
+    line-height: 1.2;
     white-space: nowrap;
     transition: background 0.3s;
 }
@@ -209,4 +225,20 @@ footer {
 .hover-botao:hover {
     background-color: rgba(34, 34, 34, 0.685);
     cursor: pointer;
+}
+
+@media screen and (max-width: 1280px){
+    .menu,.info-boxes, .tituloElogo .titulo{
+        display: none;
+    }
+    .nav__logo img {
+        width: 65px;
+        margin-left: 145px;
+    }
+    .hero {
+        font-size: 30px;
+    }
+    .hero h1 {
+        text-align: justify;
+    }
 }
