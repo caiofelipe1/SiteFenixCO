@@ -39,10 +39,6 @@
     </header>
 
     <section class="info-boxes">
-        <div class="info-box">
-            <i class="fas fa-phone"></i>
-            <p>2367-6985 / +55 (11) 94012-9818</p>
-        </div>
         <div class="info-box hover-botao">
             <i class="fas fa-envelope"></i>
             <p>Orçamento</p>
@@ -52,9 +48,10 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>SOLUÇÕES COMPLETAS EM FACILITIES</h1>
-            <p>Na <span style="color: #ff4002;">Fênixco Facilities</span>, contamos com especialistas em
-                limpeza, segurança, portaria e muito mais para a sua empresa.
-            </p>
+            <p>Na <span style="color: #ff4002;">Fênixco Facilities</span>, oferecemos soluções sob medida em limpeza,
+                segurança, portaria e serviços de apoio, garantindo eficiência e qualidade para o sucesso da sua
+                empresa.</p>
+
         </div>
     </section>
 
@@ -103,42 +100,73 @@
                 <span>Recepção e Atendimento</span>
             </div>
         </div>
-    </section>
 
-    <div class="img-limpeza"></div>
+        <!-- Formulário de Orçamento -->
+        <div class="form-orcamento">
+            <p><strong>Solicite um Orçamento!</strong></p>
+            <h4>Preencha com suas informações para iniciarmos seu atendimento:</h4>
+            <form action="/enviar-orcamento" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
 
-    <section id="sobre" class="about">
-        <h2>Sobre Nós</h2>
-        <p>A Fênixco Facilities iniciou suas atividades em 2009 e vem se consolidando como uma importante alternativa na
-            busca de soluções voltadas às áreas de conservação e limpeza, copa, portaria, zeladoria, controle de acesso,
-            recepção, eventos, manutenção, segurança, manobristas, ascensoristas, inspeção, supervisão, administração e
-            desenvolvimento de projetos, visando assegurar e zelar pelo seu patrimônio.
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            Trabalhamos com profissionais competentes, todos com os cursos e reciclagens necessários para controlar as
-            entradas e saídas de residências, empresas, estacionamentos e eventos, com muita responsabilidade e
-            profissionalismo. Os funcionários são treinados e estão aptos a trabalhar com os mais modernos equipamentos.
-            Nossos supervisores atuam com foco no cliente, tendo total responsabilidade e autonomia para tomada de
-            decisões.
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
 
-            Missão: Prestar serviços com segurança, eficiência e discrição.
+                <label for="servico">Selecione o Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="limpeza">Limpeza e Conservação</option>
+                    <option value="seguranca">Segurança Patrimonial</option>
+                    <option value="portaria">Portaria e Controle de Acesso</option>
+                    <option value="zeladoria">Zeladoria e Manutenção</option>
+                    <option value="jardinagem">Jardinagem</option>
+                    <option value="recepcao">Recepção e Atendimento</option>
+                    <option value="outros">Outros</option> <!-- Nova opção "Outros" -->
+                </select>
 
-            Princípios e Valores: A Fênixco Facilities valoriza a conduta ética, o respeito e a transparência nas
-            relações com todo o seu público.
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="3" placeholder="Detalhe os serviços que você precisa"
+                    required></textarea>
 
-            Visão: Nossa prioridade é prestar serviços com excelência, oferecendo valor agregado, pois a sua satisfação
-            é o nosso sucesso.</p>
-    </section>
+                <button type="submit" class="btn">Enviar Orçamento</button>
+            </form>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Fênixco Facilities. Todos os direitos reservados.</p>
-        <li>
-            <a href="https://www.instagram.com/fenixco.oficial/" target="_blank" class="instagram-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </li>
-    </footer>
+        <div class="img-limpeza"></div>
 
-    <script src="Assets/Script/script.js"></script>
+        <section id="sobre" class="about">
+            <h2>Sobre Nós</h2>
+            <p class="sobre-texto">
+                Fundada em 2009, a <strong>Fênixco Facilities</strong> se destaca no mercado pela oferta de soluções completas em conservação, limpeza, portaria, segurança e diversos outros serviços especializados. Nosso compromisso é assegurar a tranquilidade e eficiência operacional de nossos clientes, atuando com responsabilidade e profissionalismo.
+            </p>
+            <p class="sobre-texto">
+                Nossa equipe é altamente qualificada, equipada com as mais modernas tecnologias e treinada para oferecer o melhor atendimento. Contamos com supervisores preparados para agir de forma ágil e eficaz, garantindo a satisfação de cada cliente.
+            </p>
+            <div class="sobre-missao-visao-valores">
+                <h3>Missão</h3>
+                <p>Fornecer serviços com excelência, segurança e discrição, adaptados às necessidades de cada cliente.</p>
+        
+                <h3>Visão</h3>
+                <p>Ser referência em qualidade de serviços de facilities, sempre buscando a satisfação total do cliente.</p>
+        
+                <h3>Valores</h3>
+                <p>Ética, transparência e respeito em todas as nossas relações.</p>
+            </div>
+        </section>
+        
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Fênixco Facilities. Todos os direitos reservados.</p>
+                <a href="https://www.instagram.com/fenixco.oficial/" target="_blank" class="instagram-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </footer>
+
+        <script src="Assets/Script/script.js"></script>
 </body>
 
 </html>
