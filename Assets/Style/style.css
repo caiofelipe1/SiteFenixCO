@@ -73,7 +73,7 @@ header {
     text-align: center;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
-    height: 100vh; /* ou defina uma altura específica */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,32 +104,32 @@ header {
 
 .about {
     padding: 40px 15px;
-    background-color: #f9f9f9; /* Fundo suave */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
-    text-align: left; /* Alinhamento do texto à esquerda para melhor leitura */
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
 }
 
 .about h2 {
-    font-size: 2.5em; /* Tamanho maior para o título */
-    color: #ff4002; /* Cor destacada */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 2.5em; 
+    color: #ff4002; 
+    margin-bottom: 20px; 
 }
 
 .sobre-texto {
-    line-height: 1.6; /* Aumento do espaçamento entre linhas */
-    margin-bottom: 20px; /* Espaço abaixo de cada parágrafo */
-    color: #333; /* Cor do texto */
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    color: #333; 
 }
 
 .sobre-missao-visao-valores h3 {
-    font-size: 1.8em; /* Tamanho dos subtítulos */
-    color: #000; /* Cor do subtítulo */
-    margin-top: 20px; /* Espaço acima de cada subtítulo */
+    font-size: 1.8em; 
+    color: #000; 
+    margin-top: 20px; 
 }
 
 .sobre-missao-visao-valores p {
-    margin-bottom: 15px; /* Espaço abaixo de cada parágrafo */
+    margin-bottom: 15px; 
 }
 
 
