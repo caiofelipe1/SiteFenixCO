@@ -35,59 +35,6 @@ header {
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .hamburguer {
-        display: block;
-    }
-
-    .menu ul {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 230px;
-        background-color: #000;
-        padding: 20px;
-        width: 100%;
-        margin: 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        transition: max-height 0.3s ease-out, opacity 0.3s ease;
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    .menu.open ul {
-        display: block;
-        max-height: 300px;
-        opacity: 1;
-    }
-
-    .menu a {
-        text-decoration: none;
-        color: #ffffff;
-        display: block;
-        padding: 10px 15px;
-        transition: background-color 0.3s ease;
-    }
-
-    .menu a:hover,
-    .menu a:focus {
-        background-color: #ff4002;
-        color: #ffffff;
-    }
-
-    .menu li {
-        border-bottom: 1px solid #333;
-    }
-
-    .menu li:last-child {
-        border-bottom: none;
-    }
-}
-
 .tituloElogo {
     display: flex;
     justify-content: space-between;
@@ -178,6 +125,55 @@ footer {
     padding: 20px 0;
 }
 
+.produtos {
+    padding: 50px 15px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #000000;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: #ff4002;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.service-item span {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background-color: #ff8502;
+}
+
 .highlight-title {
     font-size: 2em;
     font-weight: bold;
@@ -249,6 +245,59 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Mobile First */
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 230px;
+        background-color: #000;
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .menu.open ul {
+        display: block;
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #ffffff;
+        display: block;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .menu a:hover,
+    .menu a:focus {
+        background-color: #ff4002;
+        color: #ffffff;
+    }
+
+    .menu li {
+        border-bottom: 1px solid #333;
+    }
+
+    .menu li:last-child {
+        border-bottom: none;
+    }
+}
 
 /* Media Queries para telas maiores */
 @media (min-width: 600px) {
