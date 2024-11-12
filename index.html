@@ -5,65 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fênixco Facilities</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Assets/Style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Zetta:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Lexend+Zetta:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="tituloElogo">
-            <div class="nav__titulo">
-                <div class="nav__logo">
-                    <img src="Assets/img/logo/brasão-preto.png" width="55px">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="Assets/img/logo/brasão-preto.png" width="55px" alt="Logo">
+                    <span class="ms-2">Fênix<span style="color: #ff4002;">co</span> Facilities</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#empresa">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="titulo">Fênix<span style="color: #ff4002;">co</span> Facilities</div>
             </div>
-            <div id="hamburguer" class="hamburguer">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-
-        <nav class="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#empresa">Empresa</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
         </nav>
     </header>
 
-    <section class="info-boxes">
-        <div class="info-box hover-botao">
-            <i class="fas fa-envelope"></i>
-            <p>Orçamento</p>
+    <section id="home" class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <div class="hero-content bg-light p-4 rounded">
+                <h1>SOLUÇÕES COMPLETAS EM FACILITIES</h1>
+                <p>Na <span style="color: #ff4002;">Fênixco Facilities</span>, oferecemos soluções sob medida em limpeza,
+                    segurança, portaria e serviços de apoio, garantindo eficiência e qualidade para o sucesso da sua
+                    empresa.</p>
+            </div>
         </div>
     </section>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>SOLUÇÕES COMPLETAS EM FACILITIES</h1>
-            <p>Na <span style="color: #ff4002;">Fênixco Facilities</span>, oferecemos soluções sob medida em limpeza,
-                segurança, portaria e serviços de apoio, garantindo eficiência e qualidade para o sucesso da sua
-                empresa.</p>
-
-        </div>
-    </section>
-
-    <div class="grid-empresa">
-        <div id="logo-empresa">
+    <section id="empresa" class="py-5 text-center">
+        <div class="container">
             <p class="highlight-title">Fênix<span style="color: #ff4002;">co</span></p>
             <p class="highlight-subtitle">FACILITIES</p>
         </div>
-    </div>
+    </section>
 
-    <section class="representacao">
-        <div class="representacao-content">
+    <section class="representacao py-5 bg-light text-center">
+        <div class="container">
             <p>Comprometidos com a excelência, a Fênixco Facilities se destaca no mercado por sua dedicação em oferecer
                 soluções completas e personalizadas para atender às necessidades de nossos clientes. Com uma equipe
                 altamente qualificada e processos eficientes, garantimos serviços de alta qualidade e profissionalismo.
@@ -71,102 +75,113 @@
         </div>
     </section>
 
+    <section id="servicos" class="produtos py-5 text-center">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="service-item bg-primary text-white p-4 rounded">
+                        <i class="fas fa-broom fa-2x mb-3"></i>
+                        <span>Limpeza e Conservação</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item bg-primary text-white p-4 rounded">
+                        <i class="fas fa-shield-alt fa-2x mb-3"></i>
+                        <span>Segurança Patrimonial</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item bg-primary text-white p-4 rounded">
+                        <i class="fas fa-door-open fa-2x mb-3"></i>
+                        <span>Portaria e Controle de Acesso</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item bg-primary text-white p-4 rounded">
+                        <i class="fas fa-toolbox fa-2x mb-3"></i>
+                        <span>Zeladoria e Manutenção</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item bg-primary text-white p-4 rounded">
+                        <i class="fas fa-seedling fa-2x mb-3"></i>
+                        <span>Jardinagem</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item bg-primary text-white p-4 rounded">
+                        <i class="fas fa-user-tie fa-2x mb-3"></i>
+                        <span>Recepção e Atendimento</span>
+                    </div>
+                </div>
+            </div>
 
-    <section class="produtos">
-        <h2>Nossos Serviços</h2>
-        <div class="services-list">
-            <div class="service-item">
-                <i class="fas fa-broom"></i>
-                <span>Limpeza e Conservação</span>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-shield-alt"></i>
-                <span>Segurança Patrimonial</span>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-door-open"></i>
-                <span>Portaria e Controle de Acesso</span>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-toolbox"></i>
-                <span>Zeladoria e Manutenção</span>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-seedling"></i>
-                <span>Jardinagem</span>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-user-tie"></i>
-                <span>Recepção e Atendimento</span>
+            <!-- Formulário de Orçamento -->
+            <div class="form-orcamento mt-5 bg-white p-4 rounded">
+                <p><strong>Solicite um Orçamento!</strong></p>
+                <h4>Preencha com suas informações para iniciarmos seu atendimento:</h4>
+                <form action="/enviar-orcamento" method="POST" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nome" class="form-label">Nome Completo:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="servico" class="form-label">Selecione o Serviço:</label>
+                        <select id="servico" name="servico" class="form-select" required>
+                            <option value="limpeza">Limpeza e Conservação</option>
+                            <option value="seguranca">Segurança Patrimonial</option>
+                            <option value="portaria">Portaria e Controle de Acesso</option>
+                            <option value="zeladoria">Zeladoria e Manutenção</option>
+                            <option value="jardinagem">Jardinagem</option>
+                            <option value="recepcao">Recepção e Atendimento</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="mensagem" class="form-label">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" rows="3"
+                            placeholder="Detalhe os serviços que você precisa" required></textarea>
+                    </div>
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-primary">Enviar Orçamento</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </section>
 
-        <!-- Formulário de Orçamento -->
-        <div class="form-orcamento">
-            <p><strong>Solicite um Orçamento!</strong></p>
-            <h4>Preencha com suas informações para iniciarmos seu atendimento:</h4>
-            <form action="/enviar-orcamento" method="POST">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone">
-
-                <label for="servico">Selecione o Serviço:</label>
-                <select id="servico" name="servico" required>
-                    <option value="limpeza">Limpeza e Conservação</option>
-                    <option value="seguranca">Segurança Patrimonial</option>
-                    <option value="portaria">Portaria e Controle de Acesso</option>
-                    <option value="zeladoria">Zeladoria e Manutenção</option>
-                    <option value="jardinagem">Jardinagem</option>
-                    <option value="recepcao">Recepção e Atendimento</option>
-                    <option value="outros">Outros</option> <!-- Nova opção "Outros" -->
-                </select>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="3" placeholder="Detalhe os serviços que você precisa"
-                    required></textarea>
-
-                <button type="submit" class="btn">Enviar Orçamento</button>
-            </form>
-        </div>
-
-        <div class="img-limpeza"></div>
-
-        <section id="sobre" class="about">
+    <section id="sobre" class="about py-5 bg-light text-center">
+        <div class="container">
             <h2>Sobre Nós</h2>
             <p class="sobre-texto">
-                Fundada em 2009, a <strong>Fênixco Facilities</strong> se destaca no mercado pela oferta de soluções completas em conservação, limpeza, portaria, segurança e diversos outros serviços especializados. Nosso compromisso é assegurar a tranquilidade e eficiência operacional de nossos clientes, atuando com responsabilidade e profissionalismo.
+                Fundada em 2009, a <strong>Fênixco Facilities</strong> nasceu com a missão de oferecer serviços de
+                excelência no mercado de facilities. Com o compromisso de proporcionar soluções personalizadas e
+                integradas, nossa empresa atua em diversas áreas como segurança, limpeza, portaria e manutenção, sempre
+                com foco na satisfação de nossos clientes.
             </p>
-            <p class="sobre-texto">
-                Nossa equipe é altamente qualificada, equipada com as mais modernas tecnologias e treinada para oferecer o melhor atendimento. Contamos com supervisores preparados para agir de forma ágil e eficaz, garantindo a satisfação de cada cliente.
-            </p>
-            <div class="sobre-missao-visao-valores">
-                <h3>Missão</h3>
-                <p>Fornecer serviços com excelência, segurança e discrição, adaptados às necessidades de cada cliente.</p>
-        
-                <h3>Visão</h3>
-                <p>Ser referência em qualidade de serviços de facilities, sempre buscando a satisfação total do cliente.</p>
-        
-                <h3>Valores</h3>
-                <p>Ética, transparência e respeito em todas as nossas relações.</p>
-            </div>
-        </section>
-        
+        </div>
+    </section>
 
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2024 Fênixco Facilities. Todos os direitos reservados.</p>
-                <a href="https://www.instagram.com/fenixco.oficial/" target="_blank" class="instagram-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </footer>
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Fênixco Facilities. Todos os direitos reservados.</p>
+            <a href="https://www.instagram.com/fenixco.oficial/" target="_blank" class="text-white">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+    </footer>
 
-        <script src="Assets/Script/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
