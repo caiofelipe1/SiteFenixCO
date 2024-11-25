@@ -81,7 +81,7 @@ header {
 }
 
 .hero-content {
-    background-color: rgba(255, 255, 255, 0.8); /* fundo branco translúcido */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
 }
@@ -182,32 +182,23 @@ footer {
 
 .produtos h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: 'Kumbh Sans', sans-serif;
     color: #000000;
 }
 
-.services-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
 .service-item {
-    background-color: #ff4002;
+    background-color: #ff8502; /* Cor laranja */
     color: #ffffff;
     padding: 20px;
-    border-radius: 12px;
-    width: 250px;
+    border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-item i {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
     display: block;
 }
@@ -215,12 +206,19 @@ footer {
 .service-item span {
     font-size: 1.2em;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
 }
 
 .service-item:hover {
-    transform: translateY(-10px);
-    background-color: #ff8502;
+    background-color: #e67300; /* Laranja mais escuro no hover */
+    transform: translateY(-5px);
+}
+
+/* Responsividade para serviços centralizados */
+.row.g-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+    gap: 20px;
+    justify-content: center;
 }
 
 .form-orcamento {
@@ -247,6 +245,7 @@ footer {
 .form-orcamento input,
 .form-orcamento select,
 .form-orcamento textarea {
+
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -344,7 +343,6 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Mobile First */
 @media (max-width: 768px) {
     .hamburguer {
         display: block;
@@ -398,7 +396,7 @@ footer {
     }
 }
 
-/* Media Queries para telas maiores */
+/* Serviços - Ajustes em telas maiores */
 @media (min-width: 600px) {
     .nav__logo {
         max-width: 65px;
@@ -421,8 +419,14 @@ footer {
     }
 
     .service-item {
-        flex: 1 1 200px;
-        max-width: 250px;
+        flex: 1 1 300px; /* Aumentando o tamanho mínimo dos quadrados */
+        height: 200px; 
+        width: 300px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em; 
     }
 
     .grid-empresa {
@@ -437,17 +441,50 @@ footer {
         flex-direction: row;
         gap: 15px;
     }
+
+    .row.g-4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 30px; 
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 300px; 
+        margin-right: auto;
+    }
+
+    .service-item {
+        margin-right: -120px;
+        background-color: #ff8502;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .service-item:hover {
+        transform: translateY(-5px); 
+        background-color: #0056b3; 
+    }
+
+    .service-item i {
+        font-size: 2em; 
+        margin-bottom: 15px;
+    }
+
+    .service-item span {
+        font-size: 1.2em; 
+        font-weight: bold;
+        color: #ffffff;
+    }
 }
+
 
 @media (min-width: 1024px) {
-    .hero {
-        padding: 100px 20px;
-        font-size: 36px;
+    .row.g-4 {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas maiores */
     }
 
-    .grid-empresa {
-        margin-left: 250px;
-        height: 300px;
+    .service-item {
+        max-width: 280px;
+        margin: auto; /* Centraliza os serviços */
     }
 }
-
