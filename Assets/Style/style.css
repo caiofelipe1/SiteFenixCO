@@ -188,13 +188,14 @@ footer {
 }
 
 .service-item {
-    background-color: #ff8502; /* Cor laranja */
+    background-color: #ff8502;
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100vw;
 }
 
 .service-item i {
@@ -209,14 +210,13 @@ footer {
 }
 
 .service-item:hover {
-    background-color: #e67300; /* Laranja mais escuro no hover */
+    background-color: #e67300;
     transform: translateY(-5px);
 }
 
-/* Responsividade para serviços centralizados */
 .row.g-4 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     justify-content: center;
 }
@@ -348,6 +348,14 @@ footer {
         display: block;
     }
 
+    .produtos {
+        padding: 30px 15px;
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+
     .menu ul {
         display: none;
         position: absolute;
@@ -396,7 +404,6 @@ footer {
     }
 }
 
-/* Serviços - Ajustes em telas maiores */
 @media (min-width: 600px) {
     .nav__logo {
         max-width: 65px;
@@ -419,7 +426,7 @@ footer {
     }
 
     .service-item {
-        flex: 1 1 300px; /* Aumentando o tamanho mínimo dos quadrados */
+        flex: 1 1 300px; 
         height: 200px; 
         width: 300px; 
         display: flex;
@@ -448,7 +455,7 @@ footer {
         gap: 30px; 
         justify-content: center;
         margin-top: 20px;
-        margin-left: 300px; 
+        margin-left: 50px;
         margin-right: auto;
     }
 
@@ -480,11 +487,11 @@ footer {
 
 @media (min-width: 1024px) {
     .row.g-4 {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas maiores */
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
     }
 
     .service-item {
-        max-width: 280px;
-        margin: auto; /* Centraliza os serviços */
+        margin: auto; 
     }
 }
